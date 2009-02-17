@@ -1,0 +1,25 @@
+# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Distributed under the terms of the GNU General Public License v2
+
+NEED_PYTHON=2.4:=
+require distutils
+
+SUMMARY="Python library to access freedesktop.org standards"
+DESCRIPTION="Currently supported are:
+
+    * Base Directory Specification Version 0.6
+    * Menu Specification Version 1.0-draft1
+    * Desktop Entry Specification Version 0.9.4
+    * Icon Theme Specification Version 0.8
+    * Recent File Spec 0.2
+    * Shared-MIME-Database Specification 0.13 
+"
+HOMEPAGE="http://pyxdg.freedesktop.org"
+DOWNLOADS="http://www.freedesktop.org/~lanius/${PNV}.tar.gz"
+
+LICENCES="LGPL-2"
+SLOT="0"
+PLATFORMS="~x86"
+MYOPTIONS=""
+
+DEPENDENCIES=""
