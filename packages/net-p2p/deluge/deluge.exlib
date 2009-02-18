@@ -1,0 +1,49 @@
+# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Distributed under the terms of the GNU General Public License v2
+
+NEED_PYTHON=2.5:=
+require distutils
+
+SUMMARY="BitTorrent client with a client/server model"
+HOMEPAGE="http://www.deluge-torrent.org/"
+
+if ever at_least scm; then
+    SCM_TYPE="svn"
+    SCM_REPOSITORY="http://svn.deluge-torrent.org"
+    require scm
+else
+    DOWNLOADS="http://download.deluge-torrent.org/source/${PV}/${PNV}.tar.bz2"
+fi
+
+LICENCES="GPL-2"
+MYOPTIONS="gtk"
+
+DEPENDENCIES="
+    build:
+        dev-python/setuptools
+    build+run:
+        net-p2p/libtorrent-rasterbar[python-binding]
+        net-twisted/twisted
+        net-twisted/twisted-web
+        python-crypto/pyopenssl
+        gtk? (
+            dev-python/dbus-python
+            dev-python/pyxdg
+          >=gnome-bindings/pygtk-2.10:2
+            gnome-desktop/librsvg:2
+        )
+"
+
+BUGS_TO="marvin_schmidt@gmx.net"
+
+# TODO
+UPSTREAM_CHANGELOG=""
+UPSTREAM_DOCUMENTATION=""
+UPSTREAM_RELEASE_NOTES=""
+
+src_install() {
+    distutils_src_install
+
+    newinitd "${FILES}"/deluged.init deluged
+    newconfd "${FILES}"/deluged.conf deluged
+}
