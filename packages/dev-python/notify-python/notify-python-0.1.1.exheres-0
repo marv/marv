@@ -1,0 +1,31 @@
+# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Distributed under the terms of the GNU General Public License v2
+
+NEED_PYTHON=2.3.5:=
+require python
+
+SUMMARY="Python bindings for libnotify"
+HOMEPAGE="http://www.galago-project.org"
+DOWNLOADS="${HOMEPAGE}/files/releases/source/${PN}/${PNV}.tar.bz2"
+
+LICENCES="LGPL-2.1"
+SLOT="0"
+PLATFORMS="~x86"
+MYOPTIONS=""
+
+DEPENDENCIES="
+    build:
+        dev-util/pkg-config
+    build+run:
+      >=gnome-bindings/pygtk-2.4.0:2
+      >=x11-libs/libnotify-0.4.3
+"
+
+pkg_postinst() {
+    python_version
+    python_mod_optimize /usr/$(get_libdir)/python${PYVER}/site-packages/gtk-2.0/pynotify
+}
+
+pkg_postrm() {
+    python_mod_cleanup /usr/$(get_libdir)/python${PYVER}/site-packages/gtk-2.0/pynotify
+}
