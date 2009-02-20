@@ -22,4 +22,7 @@ SLOT="0"
 PLATFORMS="~x86"
 MYOPTIONS=""
 
-DEPENDENCIES=""
+DEPENDENCIES="
+    build+run:
+        x11-apps/xdg-utils
+"
