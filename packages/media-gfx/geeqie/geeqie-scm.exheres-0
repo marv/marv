@@ -5,7 +5,6 @@ SLOT="0"
 PLATFORMS="~x86"
 
 src_prepare() {
-    #glib-gettextize --force --copy || die "glib-gettextize failed"
     autotools_src_prepare
     glib-gettextize --force --copy || die "glib-gettextize failed"
 }
