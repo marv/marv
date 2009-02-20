@@ -16,7 +16,10 @@ else
 fi
 
 LICENCES="GPL-2"
-MYOPTIONS="gtk"
+MYOPTIONS="
+    gtk
+    libnotify [[ requires = gtk ]]
+"
 
 DEPENDENCIES="
     build:
@@ -31,6 +34,7 @@ DEPENDENCIES="
             dev-python/pyxdg
           >=gnome-bindings/pygtk-2.10:2
             gnome-desktop/librsvg:2
+            libnotify? ( dev-python/notify-python )
         )
 "
 
