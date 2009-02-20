@@ -3,8 +3,6 @@
 # Based in part upon 'rb_libtorrent-0.14.1.ebuild' from Gentoo, which is:
 #     Copyright 1999-2008 Gentoo Foundation
 
-require autotools [ supported_autoconf=[ 2.5 ] supported_automake=[ 1.10 ] ]
-
 SUMMARY="BitTorrent library written in C++"
 DESCRIPTION="libtorrent is a C++ implementation of the BitTorrent protocol
 with the goals of being efficient and easy to use."
@@ -24,8 +22,6 @@ DEPENDENCIES="
         dev-libs/openssl
 "
 
-AT_M4DIR="m4"
-DEFAULT_SRC_PREPARE_PATCHES=( "${FILES}/${PNV}-ax_python_path.patch" )
 DEFAULT_SRC_CONFIGURE_PARAMS=(
     '--with-boost-system=boost_system-mt'
     '--with-boost-asio=boost_system-mt'
