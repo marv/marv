@@ -1,10 +1,8 @@
 # Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
 # Distributed under the terms of the GNU General Public License v2
 
-MY_PV=${PV/_/}
-MY_PNV=${PN}-${MY_PV}
-
 require ${PN}
 
-SLOT="0"
 PLATFORMS="~x86"
+
+WORK="${WORKBASE}/${PN}-${PV/_/}"
