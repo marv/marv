@@ -4,6 +4,8 @@
 NEED_PYTHON=2.5:=
 require distutils
 
+export_exlib_phases src_install
+
 SUMMARY="BitTorrent client with a client/server model"
 HOMEPAGE="http://www.deluge-torrent.org/"
 
@@ -45,7 +47,7 @@ UPSTREAM_CHANGELOG=""
 UPSTREAM_DOCUMENTATION=""
 UPSTREAM_RELEASE_NOTES=""
 
-src_install() {
+deluge_src_install() {
     distutils_src_install
 
     newinitd "${FILES}"/deluged.init deluged
