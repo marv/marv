@@ -1,3 +1,7 @@
+Source: Gentoo
+Upstream: Unknown
+Reason: Daemonise properly
+
 diff -ur a/noip2.c b/noip2.c
 --- a/noip2.c	2004-01-09 14:18:39.000000000 +0000
 +++ b/noip2.c	2007-07-20 14:02:41.100377515 +0100

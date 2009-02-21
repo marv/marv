@@ -1,3 +1,7 @@
+Source: Gentoo
+Upstream: Unknown
+Reason: Respect CFLAGS/LDFLAGS
+
 --- a/Makefile	2006-09-07 09:52:55.000000000 +0200
 +++ b/Makefile	2006-09-07 09:54:54.000000000 +0200
 @@ -21,7 +21,7 @@
