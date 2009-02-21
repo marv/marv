@@ -1,7 +1,0 @@
-
-
-require ${PN}
-
-SLOT="0"
-PLATFORMS="~x86"
-

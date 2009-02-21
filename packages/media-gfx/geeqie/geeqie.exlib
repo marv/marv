@@ -3,7 +3,17 @@
 
 SUMMARY="Lightweight GTK+ based image viewer"
 HOMEPAGE="http://${PN}.sourceforge.org"
-DOWNLOADS="mirror://sourceforge/${PN}/${MY_PNV}.tar.gz"
+
+if ever at_least scm; then
+    SCM_TYPE="svn"
+    SCM_REPOSITORY="https://${PN}.svn.sourceforge.net/svnroot/${PN}"
+
+    require scm
+
+    MY_PNV=${PN}-scm
+else
+    DOWNLOADS="mirror://sourceforge/${PN}/${MY_PNV}.tar.gz"
+fi
 
 BUGS_TO="marvin_schmidt@gmx.net"
 REMOTE_IDS="sourceforge:${PN}"
@@ -27,3 +37,5 @@ DEPENDENCIES="
 "
 
 DEFAULT_SRC_CONFIGURE_OPTION_ENABLES=( lcms lirc exiv2 )
+
+WORK=${WORKBASE}/${MY_PNV}

@@ -8,7 +8,14 @@ export_exlib_phases src_install
 
 SUMMARY="BitTorrent client with a client/server model"
 HOMEPAGE="http://www.deluge-torrent.org/"
-DOWNLOADS="http://download.deluge-torrent.org/source/${PV}/${PNV}.tar.bz2"
+
+if ever at_least scm; then
+    SCM_TYPE="svn"
+    SCM_REPOSITORY="http://svn.deluge-torrent.org"
+    require scm
+else
+    DOWNLOADS="http://download.deluge-torrent.org/source/${PV}/${PNV}.tar.bz2"
+fi
 
 LICENCES="GPL-2"
 MYOPTIONS="
