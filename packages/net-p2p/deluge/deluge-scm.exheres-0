@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 SCM_REPOSITORY="http://svn.deluge-torrent.org"
-require ${PN} scm-svn
+require deluge scm-svn
 
 DOWNLOADS=""
 PLATFORMS="~x86"

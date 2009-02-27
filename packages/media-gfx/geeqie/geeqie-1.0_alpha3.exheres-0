@@ -3,7 +3,7 @@
 
 MY_PV=${PV/_/}
 MY_PNV=${PN}-${MY_PV}
-require ${PN}
+require geeqie
 
 PLATFORMS="~x86"
 

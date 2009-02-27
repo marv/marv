@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 SCM_REPOSITORY="https://${PN}.svn.sourceforge.net/svnroot/${PN}"
-require ${PN} scm-svn autotools [ supported_autoconf=[ 2.5 ] supported_automake=[ 1.10 ] ]
+require geeqie scm-svn autotools [ supported_autoconf=[ 2.5 ] supported_automake=[ 1.10 ] ]
 
 DOWNLOADS=""
 PLATFORMS="~x86"
