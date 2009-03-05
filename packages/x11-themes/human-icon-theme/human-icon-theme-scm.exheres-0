@@ -1,0 +1,28 @@
+# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Distributed under the terms of the GNU General Public License v2
+
+SCM_REPOSITORY="http://bazaar.launchpad.net/~ubuntu-art-pkg/human-icon-theme"
+SCM_BRANCH="ubuntu"
+require scm-bzr
+
+SUMMARY="Nice and well polished icon theme for GNOME"
+HOMEPAGE="https://code.launchpad.net/human-icon-theme"
+DOWNLOADS=""
+
+LICENCES="CCPL-Attribution-ShareAlike-2.5"
+SLOT="0"
+PLATFORMS="~x86"
+
+MYOPTIONS=""
+
+DEPENDENCIES="
+    build:
+        dev-util/intltool
+        sys-devel/gettext
+        x11-apps/icon-naming-utils
+"
+
+src_prepare() {
+    sed -i -e 's|lib/icon-naming-utils|libexec|g' Makefile
+}
+
