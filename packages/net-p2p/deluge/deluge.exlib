@@ -30,6 +30,7 @@ DEPENDENCIES="
             dev-python/pyxdg
           >=gnome-bindings/pygtk-2.10:2
             gnome-desktop/librsvg:2
+            x11-apps/xdg-utils
             libnotify? ( dev-python/notify-python )
         )
 "
