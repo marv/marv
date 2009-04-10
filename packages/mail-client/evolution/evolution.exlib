@@ -1,0 +1,40 @@
+# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Distributed under the terms of the GNU General Public License v2
+
+require gnome-2
+
+SUMMARY="Personal/groupwork information manager (e-mail, adressbook, calendar, tasks etc.)"
+HOMEPAGE="http://projects.gnome.org/${PN}"
+
+SLOT="0"
+LICENCES="( LGPL-2 LGPL-3 )"
+
+BUGS_TO="marvin_schmidt@gmx.net"
+
+MYOPTIONS="dbus hal libnotify nls"
+
+DEPENDENCIES="
+    build:
+      >=dev-util/intltool-0.35.5
+        dev-util/pkg-config
+        nls? ( sys-devel/gettext )
+    build+run:
+      >=dev-libs/glib-2.16.0:2
+      >=dev-libs/gtkhtml-3.25.4:3.14
+        dev-libs/libxml2
+      >=gnome-desktop/evolution-data-server-2.24.3:1.2
+      >=gnome-desktop/gnome-icon-theme-2.19.91
+        gnome-platform/GConf:2
+      >=gnome-platform/libbonobo-2.20.3:2
+      >=gnome-platform/libbonoboui-2.4.2:2
+        gnome-platform/libglade:2
+      >=gnome-platform/libgnomecanvas-2.0.0
+        gnome-platform/libgnomeui:2
+      >=x11-libs/gtk+-2.12.0:2
+      >=x11-misc/shared-mime-info-0.22
+        dbus? ( dev-libs/dbus-glib:1 )
+        hal? ( >=sys-apps/hal-0.5.4 )
+        libnotify? ( >=x11-libs/libnotify-0.3.0 )
+"
+
+DEFAULT_SRC_CONFIGURE_PARAMS=( '--disable-nss' '--disable-smime' )
