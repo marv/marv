@@ -22,7 +22,7 @@ DEPENDENCIES="
       >=dev-libs/glib-2.16.0:2
       >=dev-libs/gtkhtml-3.25.4:3.14
         dev-libs/libxml2
-      >=gnome-desktop/evolution-data-server-${PV}:1.2
+      >=gnome-desktop/evolution-data-server-${PV}:1.2[calendar]
       >=gnome-desktop/gnome-icon-theme-2.19.91
         gnome-platform/GConf:2
       >=gnome-platform/libbonobo-2.20.3:2
