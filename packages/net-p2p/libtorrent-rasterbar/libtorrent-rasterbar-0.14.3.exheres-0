@@ -10,7 +10,7 @@ with the goals of being efficient and easy to use."
 HOMEPAGE="http://www.rasterbar.com/products/libtorrent/"
 DOWNLOADS="mirror://sourceforge/libtorrent/${PNV}.tar.gz"
 
-LICENCES="BSD"
+LICENCES="BSD-3"
 SLOT="0"
 PLATFORMS="~x86"
 MYOPTIONS="debug examples python-binding"
