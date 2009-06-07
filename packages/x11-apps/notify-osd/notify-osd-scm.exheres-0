@@ -27,10 +27,10 @@ DEPENDENCIES="
         dev-util/pkg-config
     build+run:
        !x11-apps/notification-daemon
-      >=dev-libs/dbus-glib-0.76:1
-      >=dev-libs/glib-2.16:2
+        dev-libs/dbus-glib:1[>=0.76]
+        dev-libs/glib:2[>=2.16]
         gnome-platform/GConf:2
-      >=x11-libs/gtk+-2.6:2
+        x11-libs/gtk+:2[>=2.6]
 "
 
 RESTRICT="test"

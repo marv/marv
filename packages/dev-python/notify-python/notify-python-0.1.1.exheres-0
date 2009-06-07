@@ -17,8 +17,8 @@ DEPENDENCIES="
     build:
         dev-util/pkg-config
     build+run:
-      >=gnome-bindings/pygtk-2.4.0:2
-      >=x11-libs/libnotify-0.4.3
+        gnome-bindings/pygtk:2[>=2.4.0]
+        x11-libs/libnotify[>=0.4.3]
 "
 
 pkg_postinst() {
