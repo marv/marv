@@ -17,7 +17,6 @@ MYOPTIONS="debug examples python-binding"
 
 DEPENDENCIES="
     build+run:
-        !net-p2p/libtorrent
         dev-libs/boost[>=1.35]
         dev-libs/openssl
 "
