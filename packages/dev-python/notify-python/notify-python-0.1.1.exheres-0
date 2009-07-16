@@ -1,8 +1,7 @@
 # Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
 # Distributed under the terms of the GNU General Public License v2
 
-NEED_PYTHON=2.3.5:=
-require python
+require python [ python_dep=2.3.5 ]
 
 SUMMARY="Python bindings for libnotify"
 HOMEPAGE="http://www.galago-project.org"
@@ -20,12 +19,3 @@ DEPENDENCIES="
         gnome-bindings/pygtk:2[>=2.4.0]
         x11-libs/libnotify[>=0.4.3]
 "
-
-pkg_postinst() {
-    python_version
-    python_mod_optimize /usr/$(get_libdir)/python${PYVER}/site-packages/gtk-2.0/pynotify
-}
-
-pkg_postrm() {
-    python_mod_cleanup /usr/$(get_libdir)/python${PYVER}/site-packages/gtk-2.0/pynotify
-}
