@@ -52,6 +52,6 @@ DEPENDENCIES="
 "
 
 DEFAULT_SRC_CONFIGURE_PARAMS=( '--enable-nntp' '--enable-plugins=yes' )
-DEFAULT_SRC_CONFIGURE_OPTION_ENABLES=( 'dbus' 'mono' 'networkmanager nm' 'python' 'ssl nss' 'ssl smime' )
+DEFAULT_SRC_CONFIGURE_OPTION_ENABLES=( 'dbus' 'mono' 'networkmanager nm' 'nls' 'python' 'ssl nss' 'ssl smime' )
 DEFAULT_SRC_CONFIGURE_OPTION_WITHS=( 'help' 'weather' )
 
