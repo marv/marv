@@ -5,7 +5,14 @@ require evolution
 
 PLATFORMS="~x86"
 
-MYOPTIONS="dbus hal libnotify nls"
+# NOTE: dbus, gstreamer, hal and libnotify are automagic deps
+MYOPTIONS="dbus gstreamer hal help libnotify mono nls python ssl weather
+    help    [[ description = [ Install the user documentation ] ]]
+    mono    [[ description = [ Add support for mono hooks ] ]]
+    python  [[ description = [ Add support for python hooks ] ]]
+    ssl     [[ description = [ Add support for SSL and S/MIME ] ]]
+    weather [[ description = [ Build the weather calendar plugin ] ]]
+"
 
 DEPENDENCIES="
     build:
@@ -29,9 +36,19 @@ DEPENDENCIES="
         x11-libs/gtk+:2[>=2.12.0]
         x11-misc/shared-mime-info[>=0.22]
         dbus? ( dev-libs/dbus-glib:1 )
+        gstreamer? ( media-libs/gstreamer:0.10 )
         hal? ( sys-apps/hal[>=0.5.4] )
         libnotify? ( x11-libs/libnotify[>=0.3.0] )
+        mono? ( dev-lang/mono )
+        python? ( dev-lang/python[>=2.0] )
+        ssl? (
+            dev-libs/nspr
+            dev-libs/nss
+        )
+        weather? ( gnome-desktop/libgweather[>=2.25.3] )
 "
 
-DEFAULT_SRC_CONFIGURE_PARAMS=( '--disable-nss' '--disable-smime' )
+DEFAULT_SRC_CONFIGURE_PARAMS=( '--enable-nntp' '--enable-plugins=yes' )
+DEFAULT_SRC_CONFIGURE_OPTION_ENABLES=( 'mono' 'nls' 'python' 'ssl nss' 'ssl smime' )
+DEFAULT_SRC_CONFIGURE_OPTION_WITHS=( 'help' 'weather' )
 
