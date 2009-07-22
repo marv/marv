@@ -6,7 +6,7 @@ require gnome.org
 SUMMARY="GooCanvas is a canvas widget for GTK+ using the cairo 2D library for drawing"
 HOMEPAGE="http://live.gnome.org/GooCanvas"
 
-LICENCES="GPL-2"
+LICENCES="LGPL-2"
 SLOT="0"
 PLATFORMS="~x86"
 
