@@ -9,7 +9,7 @@ DOWNLOADS="${HOMEPAGE}/files/releases/source/${PN}/${PNV}.tar.bz2"
 
 LICENCES="LGPL-2.1"
 SLOT="0"
-PLATFORMS="~x86"
+PLATFORMS="~amd64 ~x86"
 MYOPTIONS=""
 
 DEPENDENCIES="
