@@ -1,0 +1,25 @@
+From e96ac13ec04418c4bc8228c4791c312bf36c40dd Mon Sep 17 00:00:00 2001
+From: Ingmar Vanhassel <ingmar@exherbo.org>
+Date: Sat, 29 Aug 2009 06:42:04 +0200
+Subject: [PATCH] Add missing include
+
+test_bandwidth_limiter.cpp:278: error: 'cerr' is not a member of 'std'
+---
+ test/test_bandwidth_limiter.cpp |    2 ++
+ 1 files changed, 2 insertions(+), 0 deletions(-)
+
+diff --git a/test/test_bandwidth_limiter.cpp b/test/test_bandwidth_limiter.cpp
+index 7da7cd7..bd8870e 100644
+--- a/test/test_bandwidth_limiter.cpp
++++ b/test/test_bandwidth_limiter.cpp
+@@ -42,6 +42,8 @@ POSSIBILITY OF SUCH DAMAGE.
+ 
+ #include <boost/lexical_cast.hpp>
+ 
++#include <iostream>
++
+ struct torrent;
+ struct peer_connection;
+ 
+-- 
+1.6.4.1
