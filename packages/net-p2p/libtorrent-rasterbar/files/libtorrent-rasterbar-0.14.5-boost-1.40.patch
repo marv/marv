@@ -1,0 +1,27 @@
+Source:
+Upstream: Yes, http://libtorrent.svn.sourceforge.net/viewvc/libtorrent/trunk/include/libtorrent/storage.hpp?r1=3811&r2=3810&pathrev=3811
+Reason:
+
+From 5544927e2e95eb4d00cd603715359d6e6a3ad00b Mon Sep 17 00:00:00 2001
+From: Ingmar Vanhassel <ingmar@exherbo.org>
+Date: Sat, 29 Aug 2009 04:33:07 +0200
+Subject: [PATCH] Explicitly include boost/function.hpp, fixes build with boost 1.40
+
+---
+ include/libtorrent/storage.hpp |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+
+diff --git a/include/libtorrent/storage.hpp b/include/libtorrent/storage.hpp
+index 6def7dc..927d867 100644
+--- a/include/libtorrent/storage.hpp
++++ b/include/libtorrent/storage.hpp
+@@ -45,6 +45,7 @@ POSSIBILITY OF SUCH DAMAGE.
+ #include <boost/shared_ptr.hpp>
+ #include <boost/intrusive_ptr.hpp>
+ #include <boost/filesystem/path.hpp>
++#include <boost/function.hpp>
+ 
+ #ifdef _MSC_VER
+ #pragma warning(pop)
+-- 
+1.6.4.1

@@ -21,6 +21,7 @@ DEPENDENCIES="
         dev-libs/openssl
 "
 
+DEFAULT_SRC_PREPARE_PATCHES=( "${FILES}/${PNV}-boost-1.40.patch" )
 DEFAULT_SRC_CONFIGURE_PARAMS=(
     '--enable-tests'
     '--with-boost-system=boost_system-mt'
