@@ -37,3 +37,4 @@ src_install() {
     dodoc README
     doman aespipe.1
 }
+

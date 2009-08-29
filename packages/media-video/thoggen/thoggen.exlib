@@ -40,3 +40,4 @@ src_install() {
 
     rm -rf "${IMAGE}/usr/share/doc/${PN}" || die "failed to remove duplicate docs"
 }
+

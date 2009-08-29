@@ -40,3 +40,4 @@ src_install() {
 
     newinitd "${FILES}"/noip.init noip
 }
+

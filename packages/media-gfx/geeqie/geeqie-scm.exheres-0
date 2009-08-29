@@ -11,3 +11,4 @@ src_prepare() {
     autotools_src_prepare
     glib-gettextize --force --copy || die "glib-gettextize failed"
 }
+

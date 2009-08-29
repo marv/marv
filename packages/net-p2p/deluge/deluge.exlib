@@ -47,3 +47,4 @@ deluge_src_install() {
     newinitd "${FILES}"/deluged.init deluged
     newconfd "${FILES}"/deluged.conf deluged
 }
+

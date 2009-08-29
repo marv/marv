@@ -18,3 +18,4 @@ DEPENDENCIES="
         net-im/pidgin[>=2.1.1]
         net-im/telepathy-glib[>=0.7.21]
 "
+

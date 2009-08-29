@@ -19,3 +19,4 @@ DEPENDENCIES="
         gnome-bindings/pygtk:2[>=2.4.0]
         x11-libs/libnotify[>=0.4.3]
 "
+

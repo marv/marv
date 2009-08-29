@@ -8,3 +8,4 @@ require geeqie
 PLATFORMS="~x86"
 
 WORK="${WORKBASE}/${MY_PNV}"
+

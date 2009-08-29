@@ -45,3 +45,4 @@ src_install() {
     # /usr/bin will be created even if examples are disable
     option examples || rm -fr "${IMAGE}/usr/bin"
 }
+
