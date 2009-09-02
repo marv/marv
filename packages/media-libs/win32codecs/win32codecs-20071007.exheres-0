@@ -8,7 +8,7 @@ require multilib
 SUMMARY="Windows 32-bit binary codecs for video and audio playback support"
 DESCRIPTION=""
 HOMEPAGE="http://www.mplayerhq.hu"
-DOWNLOADS="mirror://mplayer/releases/codecs/all-${PV}.tar.bz2"
+DOWNLOADS="mirror://mplayer/releases/codecs/all-${PV}.tar.bz2 -> ${PNV}.tar.bz2"
 
 UPSTREAM_CHANGELOG="http://www.mplayerhq.hu/MPlayer/releases/codecs/ChangeLog [[ lang = en ]]"
 
