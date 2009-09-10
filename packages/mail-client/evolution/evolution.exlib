@@ -1,4 +1,4 @@
-# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Copyright 2009 Marvin Schmidt <marv@exherbo.org>
 # Distributed under the terms of the GNU General Public License v2
 
 require gnome-2
@@ -9,5 +9,5 @@ HOMEPAGE="http://projects.gnome.org/${PN}"
 SLOT="0"
 LICENCES="( LGPL-2 LGPL-3 )"
 
-BUGS_TO="marvin_schmidt@gmx.net"
+BUGS_TO="marv@exherbo.org"
 

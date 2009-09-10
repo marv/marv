@@ -1,11 +1,11 @@
-# Copyright 2009 Marvin Schmidt <marvin_schmidt@gmx.net>
+# Copyright 2009 Marvin Schmidt <marv@exherbo.org>
 # Distributed under the terms of the GNU General Public License v2
 
 SUMMARY="Lightweight GTK+ based image viewer"
 HOMEPAGE="http://${PN}.sourceforge.org"
 DOWNLOADS="mirror://sourceforge/${PN}/${MY_PNV}.tar.gz"
 
-BUGS_TO="marvin_schmidt@gmx.net"
+BUGS_TO="marv@exherbo.org"
 REMOTE_IDS="sourceforge:${PN}"
 UPSTREAM_CHANGELOG="http://geeqie.svn.sourceforge.net/viewvc/geeqie/trunk/ChangeLog?view=markup"
 
