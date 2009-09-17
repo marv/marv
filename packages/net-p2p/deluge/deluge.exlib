@@ -20,10 +20,10 @@ DEPENDENCIES="
     build:
         dev-python/setuptools
     build+run:
+        dev-python/pyopenssl
         net-p2p/libtorrent-rasterbar[python-binding]
         net-twisted/twisted
         net-twisted/twisted-web
-        python-crypto/pyopenssl
         gtk? (
             dev-python/dbus-python
             dev-python/pyxdg
