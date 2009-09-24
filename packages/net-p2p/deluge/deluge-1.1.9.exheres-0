@@ -1,7 +1,0 @@
-# Copyright 2009 Marvin Schmidt <marv@exherbo.org>
-# Distributed under the terms of the GNU General Public License v2
-
-require deluge
-
-PLATFORMS="~x86"
-

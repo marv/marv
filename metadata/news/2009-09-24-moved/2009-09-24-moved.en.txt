@@ -1,0 +1,9 @@
+Title: ::marv is now at git.exherbo.org/dev/marv
+Author: Marvin Schmidt <marv@exherbo.org>
+Content-Type: text/plain
+Posted: 2009-09-24
+Revision: 1
+News-Item-Format: 1.0
+
+The repository is now located at git://git.exherbo.org/dev/marv.git
+
